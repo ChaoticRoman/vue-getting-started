@@ -18,6 +18,8 @@ export default {
     }
   },
 
+  props: ['testid'],
+
   // Lifecycle hooks are called at different stages
   // of a component's lifecycle.
   // This function will be called when the component is mounted.
@@ -28,7 +30,7 @@ export default {
 </script>
 
 <template>
-  <button @click="increment">Count is: {{ count }}</button>
+  <button @click="increment" :data-testid="props?.testid">Count is: {{ count }}</button>
 </template>
 
 <style scoped>

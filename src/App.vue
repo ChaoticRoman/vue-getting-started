@@ -31,10 +31,9 @@ function toggleAwesome() {
     <div v-if="awesome">Vue is awesome!</div>
     <div v-else>Oh no 😢</div>
     <br>
-    <CounterCompositionApi></CounterCompositionApi>
-    <CounterCompositionApi></CounterCompositionApi>
-    <CounterCompositionApi></CounterCompositionApi>
-    <CounterOptionsApi></CounterOptionsApi>
+    <CounterCompositionApi testid="C1"></CounterCompositionApi>
+    <CounterCompositionApi testid="C2"></CounterCompositionApi>
+    <CounterOptionsApi testid="O1"></CounterOptionsApi>
   </div>
 </template>
 
