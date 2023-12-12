@@ -2,8 +2,8 @@
 import { ref, computed } from 'vue'
 
 const greeting = ref("How are you going, my friend?");
-
 const x = ref(5);
+let awesome = ref(true);
 
 const computed_example = computed(() => {
   return x.value * x.value;
@@ -16,6 +16,11 @@ const computed_example = computed(() => {
     {{ greeting }}
     <p />
     Square of {{ x }} is {{ computed_example }}.
+    <p />
+    <button @click="awesome = !awesome">Toggle</button>
+    <p />
+    <div v-if="awesome">Vue is awesome!</div>
+    <div v-else>Oh no 😢</div>
   </div>
 </template>
 
