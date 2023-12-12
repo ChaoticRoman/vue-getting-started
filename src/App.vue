@@ -1,5 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
+import { CounterCompositionApi } from './components/CounterCompositionApi.vue'
+import { CounterOptionsApi } from './components/CounterOptionsApi.vue'
 
 const greeting = ref("How are you going, my friend?");
 const x = ref(5);
@@ -18,14 +20,17 @@ function toggleAwesome() {
   <div id="app">
     <h1>Hello, World!</h1>
     {{ greeting }}
-    <p />
+    <p></p>
     x = <input v-model.number="x" />
     Square of {{ x }} is {{ computed_example }}.
-    <p />
+    <p></p>
     <button @click="toggleAwesome">Toggle</button>
-    <p />
+    <p></p>
     <div v-if="awesome">Vue is awesome!</div>
     <div v-else>Oh no 😢</div>
+    <br>
+    <CounterCompositionApi></CounterCompositionApi>
+    <CounterOptionsApi></CounterOptionsApi>
   </div>
 </template>
 
