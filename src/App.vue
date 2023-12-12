@@ -1,14 +1,27 @@
+<script>
+
+import { ref } from 'vue'
+
+export default {
+  name: 'App',
+
+  setup() {
+    return {
+      greeting
+    }
+  }
+}
+
+const greeting = ref("How are you going, my friend?");
+
+</script>
+
 <template>
   <div id="app">
-    <h1>Hello, Worlds!</h1>
+    <h1>Hello, World!</h1>
+    {{ greeting }}
   </div>
 </template>
-
-<script>
-export default {
-  name: 'App'
-}
-</script>
 
 <style>
 #app {
