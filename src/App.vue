@@ -1,7 +1,9 @@
 <script setup>
 import { ref, computed } from 'vue'
-import { CounterCompositionApi } from './components/CounterCompositionApi.vue'
-import { CounterOptionsApi } from './components/CounterOptionsApi.vue'
+
+// use default imports like this, would not work with named import
+import CounterCompositionApi from './components/CounterCompositionApi.vue'
+import CounterOptionsApi from './components/CounterOptionsApi.vue'
 
 const greeting = ref("How are you going, my friend?");
 const x = ref(5);
@@ -29,6 +31,8 @@ function toggleAwesome() {
     <div v-if="awesome">Vue is awesome!</div>
     <div v-else>Oh no 😢</div>
     <br>
+    <CounterCompositionApi></CounterCompositionApi>
+    <CounterCompositionApi></CounterCompositionApi>
     <CounterCompositionApi></CounterCompositionApi>
     <CounterOptionsApi></CounterOptionsApi>
   </div>
