@@ -1,19 +1,6 @@
-<script>
-
+<script setup>
 import { ref } from 'vue'
-
-export default {
-  name: 'App',
-
-  setup() {
-    return {
-      greeting
-    }
-  }
-}
-
 const greeting = ref("How are you going, my friend?");
-
 </script>
 
 <template>
