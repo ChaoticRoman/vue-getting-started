@@ -8,6 +8,10 @@ let awesome = ref(true);
 const computed_example = computed(() => {
   return x.value * x.value;
 });
+
+function toggleAwesome() {
+  awesome.value = !awesome.value;
+}
 </script>
 
 <template>
@@ -18,7 +22,7 @@ const computed_example = computed(() => {
     x = <input v-model="x" />
     Square of {{ x }} is {{ computed_example }}.
     <p />
-    <button @click="awesome = !awesome">Toggle</button>
+    <button @click="toggleAwesome">Toggle</button>
     <p />
     <div v-if="awesome">Vue is awesome!</div>
     <div v-else>Oh no 😢</div>
