@@ -15,6 +15,7 @@ const computed_example = computed(() => {
     <h1>Hello, World!</h1>
     {{ greeting }}
     <p />
+    x = <input v-model="x" />
     Square of {{ x }} is {{ computed_example }}.
     <p />
     <button @click="awesome = !awesome">Toggle</button>
