@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-// use default imports like this, would not work with named import
+// notice we are using default imports as whole component is default exported by Vue.js SFC 
 import CounterCompositionApi from './components/CounterCompositionApi.vue'
 import CounterOptionsApi from './components/CounterOptionsApi.vue'
 
