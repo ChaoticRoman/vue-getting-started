@@ -1,6 +1,10 @@
 <script setup>
 import { ref, computed } from 'vue'
 
+// notice we are using default imports as whole component is default exported by Vue.js SFC 
+import CounterCompositionApi from './components/CounterCompositionApi.vue'
+import CounterOptionsApi from './components/CounterOptionsApi.vue'
+
 const greeting = ref("How are you going, my friend?");
 const x = ref(5);
 let awesome = ref(true);
@@ -18,14 +22,18 @@ function toggleAwesome() {
   <div id="app">
     <h1>Hello, World!</h1>
     {{ greeting }}
-    <p />
+    <p></p>
     x = <input v-model.number="x" />
     Square of {{ x }} is {{ computed_example }}.
-    <p />
+    <p></p>
     <button @click="toggleAwesome">Toggle</button>
-    <p />
+    <p></p>
     <div v-if="awesome">Vue is awesome!</div>
     <div v-else>Oh no 😢</div>
+    <br>
+    <CounterCompositionApi testid="C1"></CounterCompositionApi>
+    <CounterCompositionApi testid="C2"></CounterCompositionApi>
+    <CounterOptionsApi testid="O1"></CounterOptionsApi>
   </div>
 </template>
 
