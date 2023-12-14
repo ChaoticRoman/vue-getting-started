@@ -16,9 +16,13 @@ const { data, error } = useFetch("https://httpbin.org/get")
 
 <style scoped>
 div {
-    border: 1px;
     margin: 10px;
     padding: 10px;
+}
+pre {
     text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid;
 }
 </style>
