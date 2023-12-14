@@ -4,6 +4,7 @@ import { ref, computed } from 'vue'
 // notice we are using default imports as whole component is default exported by Vue.js SFC 
 import CounterCompositionApi from './components/CounterCompositionApi.vue'
 import CounterOptionsApi from './components/CounterOptionsApi.vue'
+import BoxFetcher from './components/BoxFetcher.vue'
 
 const greeting = ref("How are you going, my friend?");
 const x = ref(5);
@@ -34,6 +35,7 @@ function toggleAwesome() {
     <CounterCompositionApi testid="C1"></CounterCompositionApi>
     <CounterCompositionApi testid="C2"></CounterCompositionApi>
     <CounterOptionsApi testid="O1"></CounterOptionsApi>
+    <BoxFetcher />
   </div>
 </template>
 
