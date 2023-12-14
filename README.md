@@ -14,6 +14,8 @@ Following instruction (you can see that I have used `vue-getting-started` instea
 are just copy pasted:
 
 1. **Install Vue CLI**:
+   **Note:** Vite is current recommended project scaffolding tool and Vue CLI is in maintenance mode.
+
    Vue CLI is a command-line tool for scaffolding Vue.js projects. Install it globally using npm:
 
    ```bash
