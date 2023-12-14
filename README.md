@@ -142,3 +142,7 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## More reference
+
+[Routing within single page application](https://vuejs.org/guide/scaling-up/routing#simple-routing-from-scratch)
